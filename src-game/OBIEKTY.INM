@@ -1,0 +1,76 @@
+; ==============================================================================
+; =                                                                            =
+; = Author: Sylwester Wysocki <sw143@wp.pl>                                    =
+; = Created on: December 2002 to January 2003                                  =
+; =                                                                            =
+; = This is free and unencumbered software released into the public domain.    =
+; =                                                                            =
+; = Anyone is free to copy, modify, publish, use, compile, sell, or            =
+; = distribute this software, either in source code form or as a compiled      =
+; = binary, for any purpose, commercial or non-commercial, and by any          =
+; = means.                                                                     =
+; =                                                                            =
+; = In jurisdictions that recognize copyright laws, the author or authors      =
+; = of this software dedicate any and all copyright interest in the            =
+; = software to the public domain. We make this dedication for the benefit     =
+; = of the public at large and to the detriment of our heirs and               =
+; = successors. We intend this dedication to be an overt act of                =
+; = relinquishment in perpetuity of all present and future rights to this      =
+; = software under copyright law.                                              =
+; =                                                                            =
+; = THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,            =
+; = EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF         =
+; = MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.     =
+; = IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR          =
+; = OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,      =
+; = ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR      =
+; = OTHER DEALINGS IN THE SOFTWARE.                                            =
+; =                                                                            =
+; = For more information, please refer to <https://unlicense.org>              =
+; =                                                                            =
+; ==============================================================================
+
+             x  EQU  0     ;0   2
+             y  EQU  2     ;2   2
+          kier  EQU  4     ;4   1
+          szer  EQU  5     ;5   2
+           wys  EQU  7     ;7   2
+           rys  EQU  9     ;9   1
+          czyn  EQU  10    ;10  1
+          licz  EQU  11    ;11  1
+           typ  EQU  12    ;12  1
+          ener  EQU  13    ;13  2
+          sila  EQU  15    ;15  1
+        punkty  EQU  16    ;16  2
+        Active  EQU  18    ;18  1
+    ActiveLicz  EQU  19    ;19  1
+        RysWyb  EQU  20    ;20  1
+
+          Trup  EQU  21    ;21  1      ;1 = niesmiertelny
+      OneColor  EQU  22    ;22  1
+    CzyWybucha  EQU  23    ;23  1
+         Grunt  EQU  24    ;24  1      ;1 jesli stoi na ziemi
+           Air  EQU  25    ;25  1      ;1 jesli unosi sie w powietrzu
+     ScrOffset  EQU  26    ;26  2      ;Offset na ekranie
+         Drzwi  EQU  28    ;28  1      ;1 jesli kolizja z drzwiami (itp.)
+         Maska  EQU  29    ;29  1      ;Maska do zamkow, przelacznikow itp.
+
+        ObktLEN  EQU  30
+
+w EQU word ptr
+b EQU byte ptr
+d EQU dword ptr
+
+RysMAX EQU 51
+Sound MACRO nr
+       mov   al, nr
+       call  PlaySB
+ENDM
+
+Smierc1 EQU 0
+Open1   EQU 1
+Wybuch1 EQU 2
+Winda1  EQU 3
+Shot1   EQU 4
+Get1    EQU 5
+Skok1   EQU 6
