@@ -1,9 +1,8 @@
 # [ARCHIVE/2003] Marcel II: 2D platform game
-- 2D platform **GAME ENGINE**,
+- 2D platform **GAME ENGINE** written in **PURE ASSEMBLY**,
 - **ARCHIVAL** code created mainly between **December 2002 and January 2003**,
 - [gameplay video](https://www.youtube.com/watch?v=W15LYIK44t8) is available on youtube,
 - legacy **16-bit code** for DOS,
-- game engine written in **PURE ASSEMBLY**,
 - **7528 bytes** of code,
 - a lot of **NAIVE CODE** - don't repeat it,
 - example showing that just write something in assembly **DOES NOT MAKE IT FAST**,
