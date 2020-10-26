@@ -10,7 +10,7 @@
 
 # Main features:
 - [MPU-401](https://en.wikipedia.org/wiki/MPU-401) driver for music,
-- plays standard [MIDI files](http://www.music.mcgill.ca/~ich/classes/mumt306/StandardMIDIfileformat.html) using **CLOCK INTERRUPT** (IRQ8) for time synchronization,
+- player for standard [MIDI files](http://www.music.mcgill.ca/~ich/classes/mumt306/StandardMIDIfileformat.html) using **CLOCK INTERRUPT** (IRQ8) for time synchronization,
 - **SB16** driver in [DMA mode](https://www.techopedia.com/definition/2767/direct-memory-access-dma) for sound,
 - track **KEYBOARD STATE** in buffer updated when [keyboard interrupt](https://en.wikipedia.org/wiki/Interrupt) (IRQ9) arrived,
 - **LEVEL EDITOR** written in C,
